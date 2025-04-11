@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Premiera Piosenki</title>
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Premiera Mojej Nowej Piosenki</h1>
+      <p>Już wkrótce!</p>
+    </header>
+    <main>
+      <div class="song-info">
+        <h2 id="song-title">"Player"</h2>
+        <p id="release-date">Data premiery: <strong>3 maja 2025, godzina 15:00</strong></p>
+        <p>Dołącz do nas, aby świętować premierę!</p>
+      </div>
+      <div id="countdown">
+        <h3>Odliczanie do premiery:</h3>
+        <p id="timer">Ładowanie...</p>
+      </div>
+      <div class="image-container">
+        <img src="cover.jpg" alt="Okładka Piosenki" class="song-image">
+        <p>Przedsmak nowej piosenki!</p>
+      </div>
+      <div class="button-container">
+        <a href="https://example.com/stream" class="btn">Odtwórz Teraz</a>
+      </div>
+      <div id="edit-section">
+        <h3>Edytuj Dane</h3>
+        <label for="access-code">Kod dostępu:</label>
+        <input type="password" id="access-code" placeholder="Wprowadź kod">
+        <button id="edit-button">Edytuj</button>
+        <div id="edit-form" style="display: none;">
+          <label for="new-title">Nowy tytuł piosenki:</label>
+          <input type="text" id="new-title" placeholder="Tytuł">
+          <label for="new-date">Nowa data premiery:</label>
+          <input type="datetime-local" id="new-date">
+          <button id="save-button">Zapisz</button>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <p>&copy; 2025 Dominik. Wszystkie prawa zastrzeżone.</p>
+    </footer>
+  </div>
+</body>
+</html>
